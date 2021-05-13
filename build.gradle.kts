@@ -23,7 +23,6 @@ tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
     kotlinOptions.jvmTarget = "11"
     kotlinOptions.javaParameters = true
     kotlinOptions.freeCompilerArgs = listOf(
-        "-Xuse-experimental=kotlinx.coroutines.ExperimentalCoroutinesApi",
         "-Xinline-classes",
         "-Xjsr305=strict",
         "-progressive"
