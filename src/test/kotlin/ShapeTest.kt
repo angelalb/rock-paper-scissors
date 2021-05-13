@@ -13,8 +13,8 @@ class ShapeTest {
     fun `paper beats rock`() {
         assertTrue(Paper.beats(Rock))
     }
-    @Test
 
+    @Test
     fun `rock beats scissors`() {
         assertTrue(Rock.beats(Scissors))
     }
