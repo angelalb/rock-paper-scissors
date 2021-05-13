@@ -83,4 +83,14 @@ class ShapeTest {
     fun `Lizard poisons eats paper`() {
         assertTrue(Lizard.beats(Paper))
     }
+
+    @Test
+    fun `Lizard is crushed by rock`() {
+        assertFalse(Lizard.beats(Rock))
+    }
+
+    @Test
+    fun `Lizard is decapitated by scissors`() {
+        assertFalse(Lizard.beats(Scissors))
+    }
 }
