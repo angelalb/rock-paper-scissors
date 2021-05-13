@@ -73,4 +73,14 @@ class ShapeTest {
     fun `Spock is disproven by paper`() {
         assertFalse(Spock.beats(Paper))
     }
+
+    @Test
+    fun `Lizard poisons Spock`() {
+        assertTrue(Lizard.beats(Spock))
+    }
+
+    @Test
+    fun `Lizard poisons eats paper`() {
+        assertTrue(Lizard.beats(Paper))
+    }
 }

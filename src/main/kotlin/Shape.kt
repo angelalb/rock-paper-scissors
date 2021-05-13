@@ -16,7 +16,7 @@ sealed class Shape {
     }
 
     object Lizard : Shape() {
-        override fun beats(other: Shape) = TODO()
+        override fun beats(other: Shape) = other is Spock || other is Paper
     }
 
     abstract fun beats(other: Shape): Boolean
