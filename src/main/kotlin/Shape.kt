@@ -11,7 +11,5 @@ sealed class Shape {
         override fun beats(other: Shape) = other is Scissors
     }
 
-    open fun beats(other: Shape): Boolean {
-        return true
-    }
+    abstract fun beats(other: Shape): Boolean
 }
