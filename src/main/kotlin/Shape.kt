@@ -11,5 +11,9 @@ sealed class Shape {
         override fun beats(other: Shape) = other is Scissors
     }
 
+    object Spock : Shape() {
+        override fun beats(other: Shape) = other is Scissors || other is Rock
+    }
+
     abstract fun beats(other: Shape): Boolean
 }

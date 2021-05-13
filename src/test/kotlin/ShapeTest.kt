@@ -1,10 +1,10 @@
 import Shape.Paper
 import Shape.Rock
 import Shape.Scissors
+import Shape.Spock
 import org.junit.jupiter.api.Assertions.assertFalse
 import org.junit.jupiter.api.Assertions.assertTrue
 import org.junit.jupiter.api.Test
-import org.junit.jupiter.api.TestInstance
 
 class ShapeTest {
 
@@ -51,5 +51,15 @@ class ShapeTest {
     @Test
     fun `rock doesn't beat rock`() {
         assertFalse(Rock.beats(Rock))
+    }
+
+    @Test
+    fun `Spock smashes scissors`() {
+        assertTrue(Spock.beats(Scissors))
+    }
+
+    @Test
+    fun `Spock vaporizes rock`() {
+        assertTrue(Spock.beats(Rock))
     }
 }
