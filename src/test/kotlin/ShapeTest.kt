@@ -1,3 +1,4 @@
+import Shape.Lizard
 import Shape.Paper
 import Shape.Rock
 import Shape.Scissors
@@ -61,5 +62,15 @@ class ShapeTest {
     @Test
     fun `Spock vaporizes rock`() {
         assertTrue(Spock.beats(Rock))
+    }
+
+    @Test
+    fun `Spock is poisoned by lizard`() {
+        assertFalse(Spock.beats(Lizard))
+    }
+
+    @Test
+    fun `Spock is disproven by paper`() {
+        assertFalse(Spock.beats(Paper))
     }
 }
